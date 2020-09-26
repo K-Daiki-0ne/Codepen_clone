@@ -1,7 +1,9 @@
+// This custom hook stores user input code
+// User's code store localStorage in browser
+
 import { useState, useEffect } from 'react';
 
 const PREFIX: string = 'codepen-clone-';
-
 
 export const useLocalStorage = (key: string, initialValue: string) => {
   const prefixKey: string = PREFIX + key;
