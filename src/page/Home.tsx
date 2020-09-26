@@ -20,9 +20,9 @@ export const Home: React.FC = (): JSX.Element => {
 
     return () => clearTimeout(timeout)
   }, [html, css, js])
-  
+
   return (
-    <div>
+    <div className='pane top-pane'>
 
     </div>
   )
