@@ -7,27 +7,19 @@ import 'codemirror/mode/css/css';
 import { Controlled as ControlledEditor } from 'react-codemirror2';
 import './Editor.scss';
 
-
-type Props = {
-  props: EditorProps
-}
-
 type EditorProps = {
   language: string;
   displayName: string;
   value: string;
-  onChange: (value: string) => void;
+  onChange: Function;
 }
 
-export const Editor: React.FC<Props> = ({ 
-  props
+export const Editor: React.FC<EditorProps> = ({
+  language,
+  displayName,
+  value,
+  onChange
 }): JSX.Element => {
-  const {
-    language,
-    displayName,
-    value,
-    onChange
-  } = props
   const [open, setOpen] = useState<boolean>(true);
 
   const handleChange = (editor: any, data: any, value: string): void => {

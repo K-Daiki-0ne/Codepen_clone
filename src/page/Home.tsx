@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLocalStorage } from '../hook/useLocalStorage';
+import { Editor } from '../components/Editor/Editor';
 import './Home.scss';
 
 export const Home: React.FC = (): JSX.Element => {
@@ -24,7 +25,12 @@ export const Home: React.FC = (): JSX.Element => {
 
   return (
     <div className='pane top-pane'>
-
+      <Editor 
+        language="xml"
+        displayName="HTML"
+        value={html}
+        onChange={setHtml}
+      />
     </div>
   )
 }
