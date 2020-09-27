@@ -5,6 +5,8 @@ import 'codemirror/mode/xml/xml';
 import 'codemirror/mode/javascript/javascript';
 import 'codemirror/mode/css/css';
 import { Controlled as ControlledEditor } from 'react-codemirror2';
+import './Editor.scss';
+
 
 type Props = {
   props: EditorProps
@@ -14,7 +16,7 @@ type EditorProps = {
   language: string;
   displayName: string;
   value: string;
-  onChange: () => void;
+  onChange: (value: string) => void;
 }
 
 export const Editor: React.FC<Props> = ({ 
