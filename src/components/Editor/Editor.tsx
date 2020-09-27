@@ -27,7 +27,7 @@ export const Editor: React.FC<EditorProps> = ({
   }
 
   return (
-    <div className='editor-container'>
+    <div className={`editor-container ${open ? '' : 'collapsed'}`}>
       <div className='editor-title'>
         { displayName }
         <button
