@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLocalStorage } from '../hook/useLocalStorage';
+import './Home.scss';
 
 export const Home: React.FC = (): JSX.Element => {
   const [html, setHtml] = useLocalStorage('html', '');
