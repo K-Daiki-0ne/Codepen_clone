@@ -24,7 +24,7 @@ export const Home: React.FC = (): JSX.Element => {
   }, [html, css, js])
 
   return (
-    <>
+    <div>
       <div className='pane top-pane'>
         <Editor 
           language="xml"
@@ -55,6 +55,6 @@ export const Home: React.FC = (): JSX.Element => {
           height="100%"
         />
       </div>
-    </>
+    </div>
   )
 }
