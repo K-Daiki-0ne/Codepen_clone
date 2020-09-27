@@ -37,6 +37,9 @@
     ]
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/react-fontawesome": "^0.1.11",
     "@types/codemirror": "^0.0.98",
     "codemirror": "^5.58.1",
     "node-sass": "^4.14.1",
