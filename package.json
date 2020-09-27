@@ -37,6 +37,9 @@
     ]
   },
   "devDependencies": {
-    "node-sass": "^4.14.1"
+    "@types/codemirror": "^0.0.98",
+    "codemirror": "^5.58.1",
+    "node-sass": "^4.14.1",
+    "react-codemirror2": "^7.2.1"
   }
 }
