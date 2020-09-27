@@ -31,6 +31,18 @@ export const Home: React.FC = (): JSX.Element => {
         value={html}
         onChange={setHtml}
       />
+      <Editor 
+        language="css"
+        displayName="Css"
+        value={css}
+        onChange={setCss}
+      />
+      <Editor 
+        language="javascript"
+        displayName="JS"
+        value={js}
+        onChange={setJs}
+      />
     </div>
   )
 }
