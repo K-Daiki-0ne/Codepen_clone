@@ -1,44 +1,64 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">Welcome to codepen-clone 👋</h1>
+<!-- ![codepen_clone](https://user-images.githubusercontent.com/51228144/94689979-7a683b00-036a-11eb-8e3f-981959e6e186.png) -->
+<img src='https://user-images.githubusercontent.com/51228144/94691478-4db52300-036c-11eb-8186-90db9dc5bbfe.png'>
 
-## Available Scripts
+<br />
 
-In the project directory, you can run:
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <img src="https://img.shields.io/badge/npm-%3E%3D1.22.4-blue.svg" />
+  <img src="https://img.shields.io/badge/node-%3E%3D12.18.1-blue.svg" />
+  <img src="https://img.shields.io/badge/react-%3E%3D16.13.1-blue.svg" />
+  <img src="https://img.shields.io/badge/typescript-%3E%3D3.7.2-blue.svg" />
+  <a href="https://github.com/K-Daiki-0ne/Codepen_clone#readme" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+  <a href="https://github.com/K-Daiki-0ne/Codepen_clone/graphs/commit-activity" target="_blank">
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
+  </a>
+</p>
 
-### `yarn start`
+> using React with TypeScipt
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Prerequisites
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- npm >=1.22.4
+- node >=12.18.1
+- react >=16.13.1
+- typescript >=3.7.2
 
-### `yarn test`
+## Install
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```sh
+yarn install
+```
 
-### `yarn build`
+## Usage
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```sh
+yarn run start
+```
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Run tests
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```sh
+yarn run test
+```
 
-### `yarn eject`
+## Using Docker
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```sh
+docker build -t codepen:1.0 ./
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```sh
+docker run -it --name codepen -p 3000:3000 -v $PWD:/usr/src/app codepen:1.0
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Author
 
-## Learn More
+* Github: [@K-Daiki-0ne](https://github.com/K-Daiki-0ne)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_

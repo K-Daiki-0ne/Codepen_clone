@@ -1,6 +1,7 @@
 {
-  "name": "codepen-clone2",
-  "version": "0.1.0",
+  "name": "codepen-clone",
+  "version": "1.0.0",
+  "description": "using React with TypeScipt",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -44,5 +45,15 @@
     "codemirror": "^5.58.1",
     "node-sass": "^4.14.1",
     "react-codemirror2": "^7.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/K-Daiki-0ne/Codepen_clone"
+  },
+  "engines": {
+    "npm": ">=1.22.4",
+    "node": ">=12.18.1",
+    "react": ">=16.13.1",
+    "typescript": ">=3.7.2"
   }
 }
