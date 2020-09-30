@@ -55,6 +55,15 @@ docker build -t codepen:1.0 ./
 docker run -it --name codepen -p 3000:3000 -v $PWD:/usr/src/app codepen:1.0
 ```
 
+## Using docker-compose
+
+```sh
+docker-compose up -d --build
+```
+
+```sh
+docker-compose up
+```
 
 ## Author
 
