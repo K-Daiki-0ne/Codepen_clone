@@ -1,0 +1,11 @@
+{
+  "terminal.integrated.shell.osx": "/bin/bash",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "editor.fontSize": 16,
+  "editor.tabSize": 2,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "settingsSync.ignoredExtensions": [
+  
+  ]
+}
