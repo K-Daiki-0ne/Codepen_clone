@@ -3,7 +3,7 @@
 
 import { useState, useEffect } from 'react';
 
-const PREFIX: string = 'codepen-clone-';
+const PREFIX = 'codepen-clone-';
 
 export const useLocalStorage = (key: string, initialValue: string) => {
   const prefixKey: string = PREFIX + key;
@@ -12,17 +12,17 @@ export const useLocalStorage = (key: string, initialValue: string) => {
     if (jsonValue != null) return JSON.parse(jsonValue);
 
     try {
-      if(typeof initialValue !== 'function') {
+      if (typeof initialValue !== 'function') {
         return initialValue;
       }
     } catch (err) {
       console.log(`${err}`);
     }
-  })
+  });
 
   useEffect(() => {
-    localStorage.setItem(prefixKey, JSON.stringify(value))
-  }, [prefixKey, value])
-  
+    localStorage.setItem(prefixKey, JSON.stringify(value));
+  }, [prefixKey, value]);
+
   return [value, setValue];
-}
+};

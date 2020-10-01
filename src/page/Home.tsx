@@ -17,33 +17,18 @@ export const Home: React.FC = (): JSX.Element => {
           <style>${css}</style>
           <script>${js}</script>
         </html>
-      `)
-    }, 250)
+      `);
+    }, 250);
 
-    return () => clearTimeout(timeout)
-  }, [html, css, js])
+    return () => clearTimeout(timeout);
+  }, [html, css, js]);
 
   return (
     <div>
-      <div className='pane top-pane'>
-        <Editor 
-          language="xml"
-          displayName="HTML"
-          value={html}
-          onChange={setHtml}
-        />
-        <Editor 
-          language="css"
-          displayName="CSS"
-          value={css}
-          onChange={setCss}
-        />
-        <Editor 
-          language="javascript"
-          displayName="JS"
-          value={js}
-          onChange={setJs}
-        />
+      <div className="pane top-pane">
+        <Editor language="xml" displayName="HTML" value={html} onChange={setHtml} />
+        <Editor language="css" displayName="CSS" value={css} onChange={setCss} />
+        <Editor language="javascript" displayName="JS" value={js} onChange={setJs} />
       </div>
       <div className="pane">
         <iframe
@@ -56,5 +41,5 @@ export const Home: React.FC = (): JSX.Element => {
         />
       </div>
     </div>
-  )
-}
+  );
+};

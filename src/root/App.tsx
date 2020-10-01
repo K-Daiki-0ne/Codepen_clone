@@ -8,6 +8,6 @@ const App: React.FC = (): JSX.Element => {
       <Home />
     </div>
   );
-}
+};
 
 export default App;

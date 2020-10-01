@@ -14,28 +14,28 @@ type EditorProps = {
   displayName: string;
   value: string;
   onChange: Function;
-}
+};
 
 export const Editor: React.FC<EditorProps> = ({
   language,
   displayName,
   value,
-  onChange
+  onChange,
 }): JSX.Element => {
   const [open, setOpen] = useState<boolean>(true);
 
   const handleChange = (editor: any, data: any, value: string): void => {
-    onChange(value)
-  }
+    onChange(value);
+  };
 
   return (
     <div className={`editor-container ${open ? '' : 'collapsed'}`}>
-      <div className='editor-title'>
-        { displayName }
+      <div className="editor-title">
+        {displayName}
         <button
-          type='button'
-          className='expand-collapse-btn'
-          onClick={() => setOpen(prevOpen => !prevOpen)}
+          type="button"
+          className="expand-collapse-btn"
+          onClick={() => setOpen((prevOpen) => !prevOpen)}
         >
           <FontAwesomeIcon icon={open ? faCompressAlt : faExpandAlt} />
         </button>
@@ -49,9 +49,9 @@ export const Editor: React.FC<EditorProps> = ({
           lint: true,
           mode: language,
           theme: 'material',
-          lineNumbers: true
+          lineNumbers: true,
         }}
       />
     </div>
-  )
-}
+  );
+};
