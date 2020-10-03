@@ -37,7 +37,7 @@ describe('Editor Component Test', () => {
     />
   );
 
-  describe('snapshot test', () => {
+  test('snapshot test', () => {
     expect(wrapper).toMatchSnapshot();
   })
 

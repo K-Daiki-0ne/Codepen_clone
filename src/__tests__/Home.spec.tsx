@@ -21,7 +21,7 @@ afterEach(() => {
 describe('Home Component Test', () => {
   const wrapper = shallow(<Home />);
 
-  describe('snapshot test', () => {
+  test('snapshot test', () => {
     expect(wrapper).toMatchSnapshot();
   })
 

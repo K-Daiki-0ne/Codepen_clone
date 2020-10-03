@@ -6,7 +6,7 @@ import { Home } from '../page/Home';
 describe('App.tsx ', () => {
   const wrapper = shallow(<App />);
 
-  describe('snapshot test', () => {
+  test('snapshot test', () => {
     expect(wrapper).toMatchSnapshot();
   })
 
