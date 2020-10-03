@@ -6,6 +6,10 @@ import { Home } from '../page/Home';
 describe('App.tsx ', () => {
   const wrapper = shallow(<App />);
 
+  describe('snapshot test', () => {
+    expect(wrapper).toMatchSnapshot();
+  })
+
   describe('rendering test', () => {
     const wrap = wrapper.find('div');
     test('root', () => expect(wrap).toBeTruthy());

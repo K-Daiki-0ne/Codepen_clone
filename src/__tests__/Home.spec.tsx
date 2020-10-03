@@ -21,6 +21,10 @@ afterEach(() => {
 describe('Home Component Test', () => {
   const wrapper = shallow(<Home />);
 
+  describe('snapshot test', () => {
+    expect(wrapper).toMatchSnapshot();
+  })
+
   describe('rendering test', () => {
     const wrap = wrapper.find('div');
     

@@ -37,6 +37,10 @@ describe('Editor Component Test', () => {
     />
   );
 
+  describe('snapshot test', () => {
+    expect(wrapper).toMatchSnapshot();
+  })
+
   describe('Rendering test', () => {
     const wrap = wrapper.find('div');
     test('Editor Component', () => expect(wrap).toBeTruthy());
@@ -45,7 +49,7 @@ describe('Editor Component Test', () => {
       const codefield = wrap.find(ControlledEditor);
       expect(codefield).toBeTruthy();
     })
-    
+
   })
   
 });
