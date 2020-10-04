@@ -21,7 +21,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint src/** --ext .ts,.tsx --fix"
+    "lint": "eslint src/** --ext .ts,.tsx --fix",
+    "deploy":"yarn build && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -65,5 +66,6 @@
     "node": ">=12.18.1",
     "react": ">=16.13.1",
     "typescript": ">=3.7.2"
-  }
+  },
+  "homepage": "https://k-daiki-0ne.github.io/Codepen_clone/"
 }
